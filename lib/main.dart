@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:note_app/ui/screens/login/login_screen.dart';
 import 'package:note_app/ui/screens/register/register_screen.dart';
+import 'package:note_app/ui/screens/test_app/test_app.dart';
 import 'package:note_app/ui/theme/color_schemes.dart';
 import 'package:note_app/ui/theme/text_theme.dart';
 
@@ -20,10 +21,11 @@ class MyApp extends StatelessWidget {
           textTheme: textTheme),
       // darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
 
-      initialRoute: 'login',
+      initialRoute: '/test_app',
       routes: {
-        'login': (context) => const LoginScreen(),
-        'register': (context) => const RegisterScreen()
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegisterScreen(),
+        '/test_app': (context) => const TestAppScreen()
       },
       debugShowCheckedModeBanner: false,
     );
